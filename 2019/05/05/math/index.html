@@ -96,13 +96,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Darren java學習紀錄">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="java 上if、for、 while、switch 綜合方法使用 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="math">
+<meta property="og:url" content="http://yoursite.com/2019/05/05/math/index.html">
 <meta property="og:site_name" content="Darren java學習紀錄">
+<meta property="og:description" content="java 上if、for、 while、switch 綜合方法使用 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2019-05-05T14:52:48.478Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Darren java學習紀錄">
+<meta name="twitter:title" content="math">
+<meta name="twitter:description" content="java 上if、for、 while、switch 綜合方法使用 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878">
 
 
 
@@ -110,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/05/math/">
 
 
 
@@ -120,7 +125,7 @@
   };
 </script>
 
-  <title>Darren java學習紀錄</title>
+  <title>math | Darren java學習紀錄</title>
   
 
 
@@ -168,8 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,7 +211,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -269,9 +273,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -303,10 +307,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/05/math/" class="post-title-link" itemprop="url">math</a>
+          <h1 class="post-title" itemprop="name headline">math
+
               
             
           </h1>
@@ -365,6 +367,13 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             閱讀次數： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -383,14 +392,10 @@
       
 
       
-        
-          
-            <p>java 上if、for、 while、switch</p>
+        <p>java 上if、for、 while、switch</p>
 <p>綜合方法使用</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.datamanage;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 從鍵盤接收整形數據存放到數組中，並對數組中的數據進行管理</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Darren</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">import</span> java.util.InputMismatchException;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DataManage</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">int</span>[] insertData() &#123;</span><br><span class="line">		<span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">			System.out.println(<span class="string">"請輸入第"</span> + (i + <span class="number">1</span>) + <span class="string">"個數據: "</span>);</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				a[i] = sc.nextInt();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InputMismatchException e) &#123;</span><br><span class="line">				System.out.println(<span class="string">"輸入的數字格式有誤，不能有非數字!"</span>);</span><br><span class="line">				sc.next();</span><br><span class="line">				i--;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> a;</span><br><span class="line">		<span class="comment">// reture a; 一個方法只能有一個</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 顯示數組中元素的內容</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> a:數組</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> length:要顯示的數組元素的個數</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showData</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> length)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">			System.out.print(a[i] + <span class="string">"   "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 從鍵盤接受一個數據，插入到數組的指定位置處</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> a 要插入數據的數組</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> n 要插入的數據</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> k 要插入的位置，從0開始</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertAtArray</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> n, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 注意從最後一個數據開始移動，避免數據覆蓋</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = a.length - <span class="number">1</span>; i &gt; k; i--) &#123;</span><br><span class="line">			a[i] = a[i - <span class="number">1</span>];</span><br><span class="line">		&#125;</span><br><span class="line">		a[k] = n;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 輸出數組中能被3整除的元素</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> a</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">divThree</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</span><br><span class="line">		String str = <span class="string">""</span>;</span><br><span class="line">		<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> n : a) &#123;</span><br><span class="line">			<span class="keyword">if</span> (n % <span class="number">3</span> == <span class="number">0</span>) &#123;</span><br><span class="line">				str = str + n + <span class="string">" "</span>;</span><br><span class="line">				count++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">"數組沒有能被3整除的元素!"</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"數組有能被3整除的元素為"</span> + str);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 提示訊息</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"***********************************"</span>);</span><br><span class="line">		System.out.println(<span class="string">"          1--插入數據"</span>);</span><br><span class="line">		System.out.println(<span class="string">"          2--顯示所有數據"</span>);</span><br><span class="line">		System.out.println(<span class="string">"          3--在指定位置處插入數據"</span>);</span><br><span class="line">		System.out.println(<span class="string">"          4--查詢能被3整除的數據"</span>);</span><br><span class="line">		System.out.println(<span class="string">"          0--退出"</span>);</span><br><span class="line">		System.out.println(<span class="string">"***********************************"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		DataManage dm = <span class="keyword">new</span> DataManage();</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="keyword">int</span> input = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span>[] a = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">int</span> n = <span class="number">0</span>, k = <span class="number">0</span>; <span class="comment">// n表示要插入的數據，k表示插入位置</span></span><br><span class="line">		<span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">			dm.notice();</span><br><span class="line">			System.out.println(<span class="string">"請輸入對應的數字進行操作"</span>);</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				input = sc.nextInt();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InputMismatchException e) &#123;</span><br><span class="line">				System.out.println(<span class="string">"輸入的數據格式有誤,不能有非數字!"</span>);</span><br><span class="line">				sc.next();</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (input == <span class="number">0</span>) &#123;</span><br><span class="line">				System.out.println(<span class="string">"退出程序"</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">switch</span> (input) &#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">				<span class="comment">// 插入數據</span></span><br><span class="line">				a = dm.insertData();</span><br><span class="line">				<span class="comment">// 顯示數據</span></span><br><span class="line">				System.out.println(<span class="string">"數組元素為:"</span>);</span><br><span class="line">				dm.showData(a, a.length - <span class="number">1</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				<span class="keyword">if</span> (a != <span class="keyword">null</span>) &#123;</span><br><span class="line">					System.out.println(<span class="string">"數組元素為："</span>);</span><br><span class="line">					<span class="keyword">if</span> (a[a.length - <span class="number">1</span>] == <span class="number">0</span>) &#123;</span><br><span class="line">						<span class="comment">// 如果組最後一個元素為0，說明還沒輸入，因此不顯示最後一個元素</span></span><br><span class="line">						dm.showData(a, a.length - <span class="number">1</span>);</span><br><span class="line">					&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">						dm.showData(a, a.length);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					System.out.println(<span class="string">"未輸入數值，請重新輸入"</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">				<span class="comment">// 在指定位置輸入數據</span></span><br><span class="line">				<span class="keyword">if</span> (a != <span class="keyword">null</span>) &#123;</span><br><span class="line">					System.out.println(<span class="string">"請輸入要插入的數據:"</span>);</span><br><span class="line">					<span class="keyword">try</span> &#123;</span><br><span class="line">						n = sc.nextInt();</span><br><span class="line">						System.out.println(<span class="string">"請入要插入數據的位置:"</span>);</span><br><span class="line">						k = sc.nextInt();</span><br><span class="line">					&#125; <span class="keyword">catch</span> (InputMismatchException e) &#123;</span><br><span class="line">						System.out.println(<span class="string">"輸入的數據格式有誤,不能有非數字!"</span>);</span><br><span class="line">						sc.next();</span><br><span class="line">						<span class="keyword">break</span>;</span><br><span class="line">					&#125;</span><br><span class="line">					dm.insertAtArray(a, n, k);</span><br><span class="line">					dm.showData(a, a.length);</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					System.out.println(<span class="string">"未輸入數值，請重新輸入"</span>);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">				<span class="comment">// 查詢數組中能被3整除的元素</span></span><br><span class="line">				<span class="keyword">if</span> (a != <span class="keyword">null</span>) &#123;</span><br><span class="line">					dm.divThree(a);</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					System.out.println(<span class="string">"還未在數組插入數據，請重新輸入!"</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"><span class="comment">//		int[] a = dm.insertData();</span></span><br><span class="line"><span class="comment">//		dm.showData(a, a.length - 1);</span></span><br><span class="line"><span class="comment">//		Scanner sc = new Scanner(System.in);</span></span><br><span class="line"><span class="comment">//		System.out.println("請輸入要插入的數據:");</span></span><br><span class="line"><span class="comment">//		int n = sc.nextInt();</span></span><br><span class="line"><span class="comment">//		System.out.println("請輸入要插入的位置");</span></span><br><span class="line"><span class="comment">//		int k = sc.nextInt();</span></span><br><span class="line"><span class="comment">//		dm.insertAtArray(a, n, k);</span></span><br><span class="line"><span class="comment">//		dm.showData(a, a.length);</span></span><br><span class="line"><span class="comment">//		dm.divThree(a);</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
@@ -411,179 +416,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/03/Hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darren">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darren java學習紀錄">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/03/Hello/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-05-03 22:57:46 / 修改時間：23:01:03" itemprop="dateCreated datePublished" datetime="2019-05-03T22:57:46+08:00">2019-05-03</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/2019/05/03/Hello/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/03/Hello/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<p>888</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/03/Hello/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -593,14 +455,22 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -835,6 +705,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -853,9 +727,28 @@
   <script id="dsq-count-scr" src="https://http-aiykv108.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/05/05/math/";
+    this.page.identifier = "2019/05/05/math/";
+    this.page.title = 'math';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://http-aiykv108.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   
